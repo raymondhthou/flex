@@ -91,4 +91,5 @@ button.cancel {
   display: flex;
   max-width: 42px;
   float: left;
+  margin-right: 15px;
 }
