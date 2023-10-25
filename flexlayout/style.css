@@ -3,6 +3,7 @@
 body {
   height: 100vh;
   margin: 0;
+  padding: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
   width: 100vw;
@@ -45,13 +46,13 @@ a {
 
 .header {
   top: 0;
-  width: inherit;
   position: fixed;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap column;
-  padding: 5px;
-  margin-left: -20px;
+  flex-shrink: 1;
+  padding: 5 5 5 0px;
+  width: inherit;
 }
 
 .content {
@@ -61,15 +62,16 @@ a {
   justify-content: center;
   height: inherit;
   gap: 5px;
+  flex-shrink: 1;
 }
 
 .footer {
  bottom: 0;
- width: inherit;
  position: fixed;
  display: flex;
  justify-content: space-between;
  background-color: #eeeeee;
- padding: 5px;
- margin-left: -20px;
+ padding: 5 5 5 5px;
+ flex-shrink: 1;
+ width: inherit;
 }
