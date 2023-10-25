@@ -28,15 +28,15 @@ body {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
-  display: flex;
-  flex: 1 0 auto;
+  padding: 16px;
+  flex-shrink: 1;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  display: flex;
+  padding: 32px;
 }
 
 .footer {
@@ -46,8 +46,26 @@ body {
   flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+ul {
+  list-style-type: none;
+}
+
 .container {
   display: flex;
-  flex-direction: column;
-  flex: 1;
+  flex-wrap: wrap;
+}
+
+.side {
+  display: flex;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
 }
